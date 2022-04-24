@@ -1,7 +1,7 @@
-import { Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 function App(): JSX.Element {
-  return <Text>Test</Text>;
+  return <Box h="calc(100vh)" />;
 }
 
 export default App;
