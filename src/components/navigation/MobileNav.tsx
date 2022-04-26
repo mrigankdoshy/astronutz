@@ -1,5 +1,4 @@
 import { Stack, useColorModeValue } from '@chakra-ui/react';
-
 import MobileNavItem from './MobileNavItem';
 import { navItems } from './shared';
 
