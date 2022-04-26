@@ -80,6 +80,16 @@
         "allowArrowFunction": true,
         "allowAnonymousFunction": true
       }
+    ],
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": true,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": true
+      }
     ]
   }
 }
