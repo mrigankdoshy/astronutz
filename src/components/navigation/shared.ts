@@ -1,40 +1,40 @@
 export const navItems: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'About Us',
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
+        label: 'Creators',
+        subLabel: 'Learn about our wonderful creators',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
+        label: 'Roadmap',
+        subLabel: "An insight into what's next",
         href: '#',
       },
     ],
   },
   {
-    label: 'Find Work',
+    label: 'Drops',
     children: [
       {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
+        label: 'Explore Space',
+        subLabel: 'Find some unique space junk',
         href: '#',
       },
       {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
+        label: 'Launching Soon',
+        subLabel: 'Up-and-coming collectibles',
         href: '#',
       },
     ],
   },
   {
-    label: 'Learn Design',
+    label: 'Community',
     href: '#',
   },
   {
-    label: 'Hire Designers',
+    label: 'Marketplace',
     href: '#',
   },
 ];

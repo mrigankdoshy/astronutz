@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { Colors } from '../../styles/colors';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
@@ -68,9 +69,9 @@ export default function NavBar() {
             fontSize="sm"
             fontWeight={600}
             color="white"
-            bg="pink.400"
+            bg={Colors.purpleHighlight}
             _hover={{
-              bg: 'pink.300',
+              bg: Colors.purpleHighlightDark,
             }}
           >
             Sign Up
