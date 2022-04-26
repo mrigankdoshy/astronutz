@@ -9,7 +9,6 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-
 import { NavItem } from './shared';
 
 export default function MobileNavItem({ label, children, href }: NavItem) {
