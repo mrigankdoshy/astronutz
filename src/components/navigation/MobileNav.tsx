@@ -1,11 +1,12 @@
 import { Stack, useColorModeValue } from '@chakra-ui/react';
+import { Colors } from '../../styles/colors';
 import MobileNavItem from './MobileNavItem';
 import { navItems } from './shared';
 
 export default function MobileNav() {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue(Colors.white, Colors.richBlack)}
       p={4}
       display={{ md: 'none' }}
     >
