@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react';
-
 import NavBar from './components/navigation/NavBar';
 
 function App(): JSX.Element {
