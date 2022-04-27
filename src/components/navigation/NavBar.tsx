@@ -61,20 +61,18 @@ export default function NavBar() {
           direction="row"
           spacing={6}
         >
-          <Button as="a" fontSize="sm" fontWeight={400} variant="link" href="#">
-            Sign In
-          </Button>
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize="sm"
             fontWeight={600}
             color="white"
-            bg={Colors.purpleHighlight}
+            bg={Colors.royalBlueLight}
             _hover={{
-              bg: Colors.purpleHighlightDark,
+              bg: Colors.royalBlueLightOff,
             }}
+            rounded="full"
           >
-            Sign Up
+            Connect Wallet
           </Button>
         </Stack>
       </Flex>
