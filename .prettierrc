@@ -5,7 +5,6 @@
   "singleQuote": true,
   "semi": true,
   "useTabs": false,
-  "jsxBracketSameLine": false,
   "arrowParens": "always",
   "endOfLine": "lf"
 }
