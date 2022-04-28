@@ -1,16 +1,9 @@
 /* eslint-disable global-require */
 import { Box, Button, Container, Heading, Stack, Text } from '@chakra-ui/react';
-import BackgroundImage from '../assets/hero.png';
 
 export default function Hero() {
   return (
-    <Box
-      backgroundImage={`url(${BackgroundImage})`}
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
-      height="calc(100vh)"
-    >
+    <Box>
       <Container maxW="3xl">
         <Stack
           as={Box}
@@ -19,11 +12,11 @@ export default function Hero() {
           py={{ base: 20, md: 36 }}
         >
           <Heading
-            fontWeight={600}
+            fontWeight={650}
             fontSize={{ base: '2xl', sm: '4xl', md: '7xl' }}
             lineHeight="110%"
           >
-            Discover, Collect and Sell Rare NFTs <br />
+            AstroNUTZ, as your mom calls it <br />
           </Heading>
           <Text color="gray.500">
             Monetize your content by charging your most loyal readers and reward
