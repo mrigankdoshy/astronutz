@@ -1,5 +1,16 @@
-/* eslint-disable global-require */
-import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import Coinbase from '../assets/coinbase2.png';
+import Ethereum from '../assets/ethereum.png';
+import Exodus from '../assets/exodus.png';
+import MetaMask from '../assets/metamask.png';
+import OpenSea from '../assets/opensea.png';
 
 export default function Hero() {
   return (
@@ -25,6 +36,63 @@ export default function Hero() {
           </Text>
         </Stack>
       </Container>
+      <Stack
+        as={Box}
+        textAlign="center"
+        alignItems="center"
+        alignContent="center"
+        spacing={{ base: 8, md: 8 }}
+        px={{ base: 16, md: 48 }}
+      >
+        <SimpleGrid
+          columns={{ base: 2, md: 5 }}
+          spacing={{ base: 16, md: 16 }}
+          textAlign="center"
+          alignItems="center"
+          alignContent="center"
+        >
+          <Box
+            backgroundImage={`url(${MetaMask})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            width="10rem"
+            height="2rem"
+          />
+          <Box
+            backgroundImage={`url(${Coinbase})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            width="10rem"
+            height="2.1rem"
+          />
+          <Box
+            backgroundImage={`url(${Exodus})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            width="10rem"
+            height="2.2rem"
+          />
+          <Box
+            backgroundImage={`url(${OpenSea})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            width="10rem"
+            height="2.2rem"
+          />
+          <Box
+            backgroundImage={`url(${Ethereum})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            width="10rem"
+            height="2.2rem"
+          />
+        </SimpleGrid>
+      </Stack>
     </Box>
   );
 }
