@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Center,
   Heading,
   Image,
@@ -7,6 +8,8 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { faEthereum } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Colors } from '../../styles/colors';
 
 const IMAGE =
@@ -32,7 +35,6 @@ export default function Card() {
           height="14rem"
           _after={{
             transition: 'all .3s ease',
-            content: '""',
             backgroundImage: `url(${IMAGE})`,
             zIndex: -1,
           }}
@@ -45,26 +47,51 @@ export default function Card() {
           <Image
             rounded="lg"
             height={230}
-            width={282}
+            width={280}
             objectFit="cover"
             src={IMAGE}
           />
         </Box>
-        <Stack pt={10} align="center">
-          <Text color="gray.500" fontSize="sm" textTransform="uppercase">
-            Brand
-          </Text>
-          <Heading fontSize="2xl" fontFamily="body" fontWeight={500}>
-            Nice Chair, pink
-          </Heading>
-          <Stack direction="row" align="center">
-            <Text fontWeight={800} fontSize="xl">
-              $57
+        <Stack pt={6}>
+          <Box>
+            <Heading
+              fontSize="lg"
+              fontFamily="body"
+              fontWeight={650}
+              color={Colors.oxfordBlueLight}
+            >
+              NFT Name
+            </Heading>
+            <Text color={Colors.grey} fontSize="xs" fontWeight={500}>
+              @artistname
             </Text>
-            <Text textDecoration="line-through" color="gray.600">
-              $199
-            </Text>
-          </Stack>
+            <Stack direction="row" align="center">
+              <Text
+                fontWeight={800}
+                fontSize="md"
+                color={Colors.royalBlueLight}
+              >
+                0.5 ETH
+              </Text>
+              <FontAwesomeIcon
+                icon={faEthereum}
+                color={Colors.oxfordBlueLight}
+              />
+            </Stack>
+          </Box>
+          <Button
+            display={{ base: 'none', md: 'inline-flex' }}
+            fontSize="sm"
+            fontWeight={600}
+            color="white"
+            rounded="xl"
+            bg={Colors.royalBlueLight}
+            _hover={{
+              bg: Colors.royalBlueLightOff,
+            }}
+          >
+            Collect Now
+          </Button>
         </Stack>
       </Box>
     </Center>

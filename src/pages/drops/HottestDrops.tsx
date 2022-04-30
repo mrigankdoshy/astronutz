@@ -12,7 +12,7 @@ import { Colors } from '../../styles/colors';
 
 export default function HottestDrops() {
   return (
-    <Box p={24}>
+    <Box p={16}>
       <Stack spacing={2} as={Container} maxW="3xl" textAlign="center">
         <Text color={Colors.purpleHighlight} fontSize="lg">
           NFT Marketplace
