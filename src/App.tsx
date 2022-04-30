@@ -1,10 +1,12 @@
 import { Box } from '@chakra-ui/react';
+import HottestDrops from './pages/drops/HottestDrops';
 import HomePage from './pages/HomePage';
 
 function App(): JSX.Element {
   return (
-    <Box>
+    <Box height="calc(100vmax)">
       <HomePage />
+      <HottestDrops />
     </Box>
   );
 }

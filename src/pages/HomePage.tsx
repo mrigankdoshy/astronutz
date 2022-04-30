@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import BackgroundImage from '../assets/hero.png';
 import NavBar from '../components/navigation/NavBar';
-import Hero from './Hero';
+import Hero from './hero/Hero';
 
 export default function HomePage() {
   return (

@@ -6,11 +6,11 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Coinbase from '../assets/coinbase2.png';
-import Ethereum from '../assets/ethereum.png';
-import Exodus from '../assets/exodus.png';
-import MetaMask from '../assets/metamask.png';
-import OpenSea from '../assets/opensea.png';
+import Coinbase from '../../assets/coinbase2.png';
+import Ethereum from '../../assets/ethereum.png';
+import Exodus from '../../assets/exodus.png';
+import MetaMask from '../../assets/metamask.png';
+import OpenSea from '../../assets/opensea.png';
 
 export default function Hero() {
   return (
