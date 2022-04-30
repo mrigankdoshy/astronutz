@@ -23,7 +23,7 @@ export default function Card({ image, title, artist, price }: CardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Center paddingY={12}>
+    <Center paddingY={{ base: 4, md: 8, lg: 12 }}>
       <Box
         role="group"
         background={Colors.white}
@@ -62,9 +62,11 @@ export default function Card({ image, title, artist, price }: CardProps) {
             >
               {title}
             </Heading>
+
             <Text color={Colors.grey} fontSize="xs" fontWeight={500}>
               @{artist}
             </Text>
+
             <Stack direction="row" align="center">
               <Text
                 fontWeight={800}
@@ -82,7 +84,7 @@ export default function Card({ image, title, artist, price }: CardProps) {
 
           {isHovered && (
             <Button
-              display={{ base: 'none', md: 'inline-flex' }}
+              display="inline-flex"
               background={Colors.royalBlueLight}
               color={Colors.white}
               fontSize="sm"

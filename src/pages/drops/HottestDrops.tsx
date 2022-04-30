@@ -12,16 +12,19 @@ import { Colors } from '../../styles/colors';
 
 export default function HottestDrops() {
   return (
-    <Box p={16}>
-      <Stack spacing={2} as={Container} maxW="3xl" textAlign="center">
+    <Box padding={{ base: 4, md: 8, lg: 16 }}>
+      <Stack spacing={2} as={Container} maxWidth="3xl" textAlign="center">
         <Text color={Colors.purpleHighlight} fontSize="lg">
           NFT Marketplace
         </Text>
         <Heading fontSize="3xl">Hottest Drops 🔥</Heading>
       </Stack>
 
-      <Container maxW="6xl" mt={10}>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+      <Container maxWidth="6xl" marginTop={10}>
+        <SimpleGrid
+          columns={{ base: 2, md: 2, lg: 4 }}
+          spacing={{ base: 4, md: 6, lg: 10 }}
+        >
           {drops.map((drop) => (
             <Card
               image={drop.image}

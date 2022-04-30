@@ -1,6 +1,6 @@
 // eslint-disable-next-line prefer-spread
-const drops = Array.apply(null, Array(4)).map((x, i) => ({
-  id: i,
+const drops = Array.apply(null, Array(4)).map((index) => ({
+  id: index,
   title: 'NFT Marketplace',
   artist: 'artistname',
   price: 0.5,
