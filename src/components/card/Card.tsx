@@ -6,53 +6,53 @@ import {
   Image,
   Stack,
   Text,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import { faEthereum } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import { Colors } from '../../styles/colors';
 
-const IMAGE =
-  'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
+export type CardProps = Readonly<{
+  image: string;
+  title: string;
+  artist: string;
+  price: number;
+}>;
 
-export default function Card() {
+export default function Card({ image, title, artist, price }: CardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Center py={12}>
+    <Center paddingY={12}>
       <Box
         role="group"
-        p={3}
-        maxW="30rem"
-        w="full"
-        bg={useColorModeValue(Colors.white, Colors.white)}
+        background={Colors.white}
+        maxWidth="30rem"
+        height={370}
+        padding={3}
         boxShadow="2xl"
         rounded="xl"
-        pos="relative"
         zIndex={1}
+        transition="all .4s ease-out"
+        _hover={{
+          transition: 'all .3s ease-out',
+          border: '4px',
+          borderColor: Colors.royalBlueLight,
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <Box
+        <Image
+          src={image}
+          height="16rem"
+          width="14rem"
           rounded="lg"
-          pos="relative"
-          height="14rem"
-          _after={{
-            transition: 'all .3s ease',
-            backgroundImage: `url(${IMAGE})`,
-            zIndex: -1,
-          }}
-          _groupHover={{
-            _after: {
-              filter: 'blur(15px)',
-            },
-          }}
-        >
-          <Image
-            rounded="lg"
-            height={230}
-            width={280}
-            objectFit="cover"
-            src={IMAGE}
-          />
-        </Box>
-        <Stack pt={6}>
+          objectFit="cover"
+          transition="all .4s ease-out"
+          _groupHover={{ height: '13rem', transition: 'all .3s ease-out' }}
+        />
+
+        <Stack paddingTop={4}>
           <Box>
             <Heading
               fontSize="lg"
@@ -60,10 +60,10 @@ export default function Card() {
               fontWeight={650}
               color={Colors.oxfordBlueLight}
             >
-              NFT Name
+              {title}
             </Heading>
             <Text color={Colors.grey} fontSize="xs" fontWeight={500}>
-              @artistname
+              @{artist}
             </Text>
             <Stack direction="row" align="center">
               <Text
@@ -71,7 +71,7 @@ export default function Card() {
                 fontSize="md"
                 color={Colors.royalBlueLight}
               >
-                0.5 ETH
+                {price} ETH
               </Text>
               <FontAwesomeIcon
                 icon={faEthereum}
@@ -79,19 +79,23 @@ export default function Card() {
               />
             </Stack>
           </Box>
-          <Button
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize="sm"
-            fontWeight={600}
-            color="white"
-            rounded="xl"
-            bg={Colors.royalBlueLight}
-            _hover={{
-              bg: Colors.royalBlueLightOff,
-            }}
-          >
-            Collect Now
-          </Button>
+
+          {isHovered && (
+            <Button
+              display={{ base: 'none', md: 'inline-flex' }}
+              background={Colors.royalBlueLight}
+              color={Colors.white}
+              fontSize="sm"
+              fontWeight={600}
+              rounded="xl"
+              transition="all .4s ease-out"
+              _hover={{
+                background: Colors.royalBlueLightOff,
+              }}
+            >
+              Collect Now
+            </Button>
+          )}
         </Stack>
       </Box>
     </Center>

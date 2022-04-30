@@ -23,7 +23,12 @@ export default function HottestDrops() {
       <Container maxW="6xl" mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
           {drops.map((drop) => (
-            <Card />
+            <Card
+              image={drop.image}
+              title={drop.title}
+              artist={drop.artist}
+              price={drop.price}
+            />
           ))}
         </SimpleGrid>
       </Container>
