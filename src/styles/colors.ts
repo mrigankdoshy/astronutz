@@ -13,4 +13,5 @@ export enum Colors {
   royalBlueLight = '#1E50FF',
   royalBlueLightOff = '#153BC2',
   royalBlueDark = '#112469',
+  royalBlueDarkOff = '#0D1A4A',
 }

@@ -13,6 +13,7 @@ import {
 import { faMeteor, faMoon, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Feature from 'components/feature/Feature';
+import SubscribeNewsletter from 'components/subscribers/SubscribeNewsletter';
 import { Colors } from 'styles/colors';
 
 export default function About() {
@@ -35,10 +36,10 @@ export default function About() {
           <Stack spacing={4}>
             <Text
               textTransform="uppercase"
-              color="blue.400"
+              color={Colors.royalBlueLight}
               fontWeight={600}
               fontSize={{ base: 'xs', sm: 'xs', md: 'sm' }}
-              background={useColorModeValue('blue.50', 'blue.900')}
+              background={Colors.royalBlueDarkOff}
               padding={2}
               alignSelf="flex-start"
               rounded="md"
@@ -46,19 +47,13 @@ export default function About() {
               Our Value
             </Text>
             <Heading>A rare digital experience</Heading>
-            <Text
-              color="gray.500"
-              fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
-            >
+            <Text color="gray.500" fontSize={{ base: 'md' }}>
               When you invest in our collection, you are not sold the average
               static JPEG by every instagram hustler today. We are offering you
               access to a metaphysical space pod to be a part of our
               intergalactic club of Astronutters.
             </Text>
-            <Text
-              color="gray.500"
-              fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
-            >
+            <Text color="gray.500" fontSize={{ base: 'md' }}>
               Everything and anything that we venture into in the future will be
               a part of these perks and can be seamlessly activated by roadmap
               activation.
@@ -95,6 +90,8 @@ export default function About() {
           </Flex>
         </SimpleGrid>
       </Container>
+
+      <SubscribeNewsletter />
     </Box>
   );
 }
