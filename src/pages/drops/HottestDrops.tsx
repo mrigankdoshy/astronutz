@@ -12,11 +12,11 @@ import { Colors } from 'styles/colors';
 
 export default function HottestDrops() {
   return (
-    <Box padding={{ base: 4, md: 8, lg: 16 }}>
+    <Box padding={{ base: 4, md: 8, lg: 12 }}>
       <Stack
         spacing={{ base: 2 }}
         as={Container}
-        maxWidth="3xl"
+        maxWidth="6xl"
         textAlign="center"
       >
         <Text color={Colors.purpleHighlight} fontSize="lg">
@@ -25,7 +25,7 @@ export default function HottestDrops() {
         <Heading fontSize="3xl">Hottest Drops 🔥</Heading>
       </Stack>
 
-      <Container maxWidth="6xl" marginTop={10}>
+      <Container maxWidth="6xl" marginTop={4}>
         <SimpleGrid
           columns={{ base: 2, md: 2, lg: 4 }}
           spacing={{ base: 4, md: 6, lg: 10 }}
