@@ -1,6 +1,6 @@
 import HomePage from 'pages/HomePage';
 
-function App(): JSX.Element {
+function App() {
   return <HomePage />;
 }
 
