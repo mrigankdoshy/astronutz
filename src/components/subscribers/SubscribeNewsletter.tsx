@@ -25,7 +25,6 @@ export default function SubscribeNewsletter() {
       boxShadow="xl"
       rounded="xl"
       padding={16}
-      direction="column"
       align="center"
     >
       <Heading as="h2" fontSize={{ base: 'xl', sm: '2xl' }} marginBottom={5}>
