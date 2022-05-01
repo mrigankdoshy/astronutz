@@ -6,9 +6,9 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Card from '../../components/card/Card';
-import drops from '../../data/drops';
-import { Colors } from '../../styles/colors';
+import Card from 'components/card/Card';
+import drops from 'data/drops';
+import { Colors } from 'styles/colors';
 
 export default function HottestDrops() {
   return (

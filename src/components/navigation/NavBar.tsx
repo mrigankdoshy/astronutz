@@ -11,9 +11,9 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import { Colors } from '../../styles/colors';
-import DesktopNav from './DesktopNav';
-import MobileNav from './MobileNav';
+import DesktopNav from 'components/navigation/DesktopNav';
+import MobileNav from 'components/navigation/MobileNav';
+import { Colors } from 'styles/colors';
 
 export default function NavBar() {
   const { isOpen, onToggle } = useDisclosure();

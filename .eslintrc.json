@@ -7,8 +7,12 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "airbnb",
+    "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -16,14 +20,16 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "react",
     "@typescript-eslint",
     "react-hooks",
     "prettier",
-    "simple-import-sort"
+    "simple-import-sort",
+    "import"
   ],
   "settings": {
     "import/resolver": {
@@ -40,9 +46,10 @@
     "linebreak-style": "off",
     "eol-last": "off",
     "max-len": "off",
-    "import/extensions": ["error", "never", { "svg": "always" }],
     "no-console": "warn",
     "no-shadow": "off",
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
     "prettier/prettier": [
       "error",
       {
