@@ -6,21 +6,21 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Coinbase from '../assets/coinbase2.png';
-import Ethereum from '../assets/ethereum.png';
-import Exodus from '../assets/exodus.png';
-import MetaMask from '../assets/metamask.png';
-import OpenSea from '../assets/opensea.png';
+import Coinbase from '../../assets/coinbase2.png';
+import Ethereum from '../../assets/ethereum.png';
+import Exodus from '../../assets/exodus.png';
+import MetaMask from '../../assets/metamask.png';
+import OpenSea from '../../assets/opensea.png';
 
 export default function Hero() {
   return (
     <Box>
-      <Container maxW="3xl">
+      <Container maxWidth="3xl">
         <Stack
           as={Box}
           textAlign="center"
-          spacing={{ base: 8, md: 8 }}
-          py={{ base: 16, md: 64 }}
+          spacing={{ base: 8 }}
+          paddingY={{ base: 16, md: 32, lg: 64 }}
         >
           <Heading
             fontWeight={650}
@@ -41,12 +41,12 @@ export default function Hero() {
         textAlign="center"
         alignItems="center"
         alignContent="center"
-        spacing={{ base: 8, md: 8 }}
-        px={{ base: 16, md: 48 }}
+        spacing={{ base: 8, md: 8, lg: 8 }}
+        paddingX={{ base: 16, md: 32, lg: 48 }}
       >
         <SimpleGrid
-          columns={{ base: 2, md: 5 }}
-          spacing={{ base: 16, md: 16 }}
+          columns={{ base: 2, md: 3, lg: 5 }}
+          spacing={{ base: 16 }}
           textAlign="center"
           alignItems="center"
           alignContent="center"

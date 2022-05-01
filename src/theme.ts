@@ -10,7 +10,7 @@ const theme = extendTheme({
   config,
   styles: {
     global: {
-      body: {
+      'html, body': {
         bgGradient: `linear(to-br, ${Colors.spacePurpleDark}, ${Colors.oxfordBlueLight}, ${Colors.spacePurpleLight})`,
         color: 'white',
       },
