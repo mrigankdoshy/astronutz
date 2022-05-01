@@ -17,7 +17,7 @@ import { Colors } from 'styles/colors';
 
 export default function About() {
   return (
-    <Box padding={{ base: 4, md: 8, lg: 12 }}>
+    <Box paddingX={4} paddingY={12}>
       <Stack
         as={Container}
         spacing={{ base: 2 }}
@@ -30,14 +30,14 @@ export default function About() {
         <Heading fontSize="3xl">Welcome to the Astronutz Club 🚀</Heading>
       </Stack>
 
-      <Container maxWidth="6xl" paddingY={{ base: 4, md: 8, lg: 12 }}>
+      <Container maxWidth="6xl" paddingY={{ base: 8, md: 12, lg: 12 }}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
               textTransform="uppercase"
               color="blue.400"
               fontWeight={600}
-              fontSize="sm"
+              fontSize={{ base: 'xs', sm: 'xs', md: 'sm' }}
               background={useColorModeValue('blue.50', 'blue.900')}
               padding={2}
               alignSelf="flex-start"
@@ -46,19 +46,26 @@ export default function About() {
               Our Value
             </Text>
             <Heading>A rare digital experience</Heading>
-            <Text color="gray.500" fontSize="lg">
+            <Text
+              color="gray.500"
+              fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
+            >
               When you invest in our collection, you are not sold the average
               static JPEG by every instagram hustler today. We are offering you
               access to a metaphysical space pod to be a part of our
               intergalactic club of Astronutters.
             </Text>
-            <Text color="gray.500" fontSize="lg">
+            <Text
+              color="gray.500"
+              fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
+            >
               Everything and anything that we venture into in the future will be
               a part of these perks and can be seamlessly activated by roadmap
               activation.
             </Text>
             <Stack
               spacing={4}
+              paddingY={4}
               divider={<StackDivider borderColor={Colors.grey} />}
             >
               <Feature
@@ -78,11 +85,11 @@ export default function About() {
               />
             </Stack>
           </Stack>
-          <Flex marginTop={16} maxHeight="25rem">
+          <Flex marginTop={{ base: 4, sm: 8, md: 16 }} maxHeight="25rem">
             <Image
-              rounded="md"
-              alt="feature image"
               src="https://source.unsplash.com/MIdLSFHYuMk"
+              rounded="xl"
+              alt="feature image"
               objectFit="cover"
             />
           </Flex>

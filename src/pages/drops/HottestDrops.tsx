@@ -12,7 +12,7 @@ import { Colors } from 'styles/colors';
 
 export default function HottestDrops() {
   return (
-    <Box padding={{ base: 4, md: 8, lg: 12 }}>
+    <Box paddingTop={{ base: 4, md: 8, lg: 16 }}>
       <Stack
         spacing={{ base: 2 }}
         as={Container}
