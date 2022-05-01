@@ -46,7 +46,9 @@ export default function About() {
             >
               Our Value
             </Text>
+
             <Heading>A rare digital experience</Heading>
+
             <Text color="gray.500" fontSize={{ base: 'md' }}>
               When you invest in our collection, you are not sold the average
               static JPEG by every instagram hustler today. We are offering you
@@ -58,6 +60,7 @@ export default function About() {
               a part of these perks and can be seamlessly activated by roadmap
               activation.
             </Text>
+
             <Stack
               spacing={4}
               paddingY={4}
@@ -80,6 +83,7 @@ export default function About() {
               />
             </Stack>
           </Stack>
+
           <Flex marginTop={{ base: 4, sm: 8, md: 16 }} maxHeight="25rem">
             <Image
               src="https://source.unsplash.com/MIdLSFHYuMk"
