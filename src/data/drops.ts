@@ -1,11 +1,33 @@
 // eslint-disable-next-line prefer-spread
-const drops = Array.apply(null, Array(4)).map((index) => ({
-  id: index,
-  title: 'NFT Marketplace',
-  artist: 'artistname',
-  price: 0.5,
-  image:
-    'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-}));
+const drops = [
+  {
+    id: 1,
+    title: 'Fabric Ledge',
+    artist: 'theprofessor',
+    price: 0.5,
+    image: 'https://source.unsplash.com/1X2HH9UITq0',
+  },
+  {
+    id: 2,
+    title: 'Space Walk',
+    artist: 'the.boba.guy',
+    price: 0.8,
+    image: 'https://source.unsplash.com/CqYcY3xJHz0',
+  },
+  {
+    id: 3,
+    title: 'Complementarity',
+    artist: 'astrogeek',
+    price: 1.2,
+    image: 'https://source.unsplash.com/XClNDg9Z9Ag',
+  },
+  {
+    id: 4,
+    title: 'Color-Splash Continuum',
+    artist: 'space_levitate',
+    price: 0.3,
+    image: 'https://source.unsplash.com/ONHYh31_yJ4',
+  },
+];
 
 export default drops;
