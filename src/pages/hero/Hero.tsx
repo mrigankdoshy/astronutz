@@ -19,7 +19,7 @@ export default function Hero() {
         <Stack
           as={Box}
           textAlign="center"
-          spacing={8}
+          spacing={{ base: 8 }}
           paddingY={{ base: 16, md: 32, lg: 64 }}
         >
           <Heading
@@ -46,7 +46,7 @@ export default function Hero() {
       >
         <SimpleGrid
           columns={{ base: 2, md: 3, lg: 5 }}
-          spacing={16}
+          spacing={{ base: 16 }}
           textAlign="center"
           alignItems="center"
           alignContent="center"

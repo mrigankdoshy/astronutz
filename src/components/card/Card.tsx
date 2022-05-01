@@ -29,7 +29,7 @@ export default function Card({ image, title, artist, price }: CardProps) {
         background={Colors.white}
         maxWidth="30rem"
         height={370}
-        padding={3}
+        padding={{ base: 3 }}
         boxShadow="2xl"
         rounded="xl"
         zIndex={1}
