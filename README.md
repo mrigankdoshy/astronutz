@@ -6,7 +6,7 @@
 A collection of 10,000 nutty NFTs - they are unique digital collectibles that are exploring nodes and bytes on the Ethereum blockchain.
 
 ## 🚧 Work In Progress
-This project is currently a work in progress. The artworks on the website are not temporary and are not the actual NFTs from this collection.
+This project is currently a work in progress. The artworks on the website are temporary and are not the actual NFTs from this collection.
 
 ## ⚡️ About us
 
