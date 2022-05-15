@@ -1,5 +1,6 @@
 # Astronutz
 [![Netlify Status](https://api.netlify.com/api/v1/badges/143f9378-d081-46c2-950d-3a36e8af5bcc/deploy-status)](https://app.netlify.com/sites/astronutz/deploys)
+[![Deploy](https://github.com/mrigankdoshy/astronutz/actions/workflows/deploy.yml/badge.svg)](https://github.com/mrigankdoshy/astronutz/actions/workflows/deploy.yml)
 [![CI](https://github.com/mrigankdoshy/astronutz/actions/workflows/ci.yml/badge.svg)](https://github.com/mrigankdoshy/astronutz/actions/workflows/ci.yml)
 
 A collection of 10,000 nutty NFTs - they are unique digital collectibles that are exploring nodes and bytes on the Ethereum blockchain.
