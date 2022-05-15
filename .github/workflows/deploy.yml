@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  tagged-release:
+  deploy:
     name: "Tagged Release"
     runs-on: ${{ matrix.os }}
 
@@ -44,15 +44,6 @@ jobs:
         
       - name: Build
         run: npm run build
-
-      - name: Create Tagged Release
-        uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          files: |
-            LICENSE.txt
-            *.jar
             
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
